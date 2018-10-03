@@ -1,0 +1,78 @@
+﻿@model SaqueNaWeb.Models.Log
+
+@{
+    ViewData["Title"] = "Logged";
+}
+
+<h2>Saque Realizado com Sucesso</h2>
+
+<h4>Total de Notas Entregues:</h4>
+<hr />
+
+@{ 
+	var cem = TempData["100"];
+	var cinq = TempData["50"];
+	var vinte = TempData["20"];
+	var dez = TempData["10"];
+	var cinco = TempData["5"];
+	var dois = TempData["2"];
+	var tot = TempData["Total"];
+}
+
+<div>
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				Notas de 100
+			</th>
+			<th>
+				Notas de 50
+			</th>
+			<th>
+				Notas de 20
+			</th>
+			<th>
+				Notas de 10
+			</th>
+			<th>
+				Notas de 5
+			</th>
+			<th>
+				Notas de 2
+			</th>
+			<th>
+				Total
+			</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				@cem
+			</td>
+			<td>
+				@cinq
+			</td>
+			<td>
+				@vinte
+			</td>
+			<td>
+				@dez
+			</td>
+			<td>
+				@cinco
+			</td>
+			<td>
+				@dois
+			</td>
+			<td>
+				@tot
+			</td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+</div>
